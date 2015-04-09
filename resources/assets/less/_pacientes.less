@@ -1,0 +1,33 @@
+.bgMidBlue{
+	background: @midBlue;
+}
+
+.bgLightBlue{
+	background: @lightBlue;
+}
+
+#pacientes{
+	.line{
+		background: url(../img/lines/line_institucion.png) bottom center no-repeat;
+		@media (max-width: @screen-sm-max) { 
+			background: none;
+		}
+	}
+
+	.text-mega{
+		font-size: 36px;
+		line-height: 33px;
+	}
+}
+
+.AP{
+	height: 318px;
+	background: url(../img/splash/atencionPacientes.png) center no-repeat;
+	padding: 3% 16% 0 33%;
+
+	@media (max-width: @screen-sm-max) { 
+		background: @darkBlue;
+		height: 100%;
+		padding: 5%;
+	}
+}

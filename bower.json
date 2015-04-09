@@ -1,0 +1,31 @@
+{
+  "name": "Hospital San Felipe",
+  "version": "1.0.0",
+  "main": "resources/assets/css/main.css",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "hsf",
+    "bootstrap",
+    "slim"
+  ],
+  "authors": [
+    "Design Squad"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "WOW": "~1.0.3",
+    "bootstrap" : "~3.3.4",
+    "jquery" : "~1.11.0",
+    "fontawesome" : "~4.3.0",
+    "bootstrapvalidator" : "~0.5.3"
+  }
+}

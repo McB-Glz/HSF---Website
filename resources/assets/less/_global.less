@@ -1,0 +1,193 @@
+body {
+	background:#f5f5f5;
+	color:#FFF;
+	height:100%;
+	width:100%;
+	font-family: 'Raleway', sans-serif;
+	margin: 0 auto;
+	font-size: 14px;
+}
+
+
+.container-fluid{
+	
+	margin: 0 auto;
+
+	.row{
+		
+		
+
+		@media (min-width: @screen-lg-min) { 
+
+			margin: 0 auto;
+			// width: 1200px;
+
+		}
+	}
+}
+// Text Colors
+.text-darkBlue{
+	color: @darkBlue;
+}
+
+.text-midBlue{
+	color: @midBlue;
+}
+
+.text-lightBlue{
+	color: @lightBlue;
+}
+
+.text-white{
+	color: white;
+}
+
+.text-grey{
+	color: #6f6f6e;
+}
+//Text paddings
+.padLeft{
+	padding-left: 5%;
+}
+
+.padRight{
+	padding-right: 5%;
+}
+
+.UDPadding{
+	padding: 5% 0;
+}
+
+.LRPadding{
+	padding: 0 5%;
+}
+
+.padUp{
+	padding-top: 5%;
+}
+
+.padDown{
+	padding-bottom: 5%;
+}
+
+//Text weight
+
+.text-light{
+	font-weight: 300;
+}
+
+//Text size
+.text-sm{
+	font-size: 14px;
+}
+
+.text-md{
+	font-size: 16px;
+}
+
+.text-lg{
+	font-size: 18px;
+}
+
+.text-xl{
+	font-size: 20px;
+}
+
+
+//Navbar
+
+.navbar-default{
+
+	.container-fluid{
+		max-width: 1200px;
+	}
+
+	.nav{
+		margin: 1.5% 0 0 0;
+
+		.menuPills{
+			color: @darkBlue;
+
+			&:hover{
+				background-color: @darkBlue;
+				color: white;
+			}	
+
+		}
+
+		> li{
+
+			> a{
+
+				color: @darkBlue;
+
+				&:hover{
+					background-color: @darkBlue;
+					color: white;
+				}
+			}
+
+		}
+	}
+}
+
+//Images
+
+.img-inline{
+	display: inline;
+}
+
+.img-full{
+	width: 100%;
+}
+
+.img-center{
+	margin: 0 auto;
+}
+
+//anchors
+
+a{
+	text-decoration: none;
+
+	& :hover{
+		text-decoration: none;
+	}
+}
+
+//Elements
+#blah{
+	background: url(../img/bg/bg_container.png) top no-repeat;
+	background-size: 100% auto;
+	margin: 0 -15px;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+.media{
+	padding: 5px 15px;
+
+	&:first-child{
+		margin-top: 15px;
+	}
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {  }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {  }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {  }
+
+/* Only extra-small devices (smartphones, 480px)  */
+@media (max-width: @screen-xs-max) {  }
+

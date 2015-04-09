@@ -1,0 +1,49 @@
+{% extends "default.html" %}
+
+{% block sectionId %}institucion{% endblock sectionId %}
+
+
+{% block title %}Institucion{% endblock title %}
+
+{% block content %}
+		<div class="row UDPadding">
+			<div class="col-xs-12 text-center">
+				<img src="{{base_url}}assets/img/logos/logo_institucion.png" class="img-responsive img-center">
+			</div>
+		</div>
+		<div class="row line padDown">
+			<div class="col-xs-10 col-xs-offset-1 text-darkBlue text-md text-center">
+				<p>El Hospital San Felipe fue fundado en 1965 por el Dr. José Kahuam González y desde entonces las generaciones de médicos de la familia Kahuam han conservado la dedicación y respeto hacia los pacientes que caracterizaban al Dr. Kahuam.</p>
+				<br>
+				<p>Actualmente el hospital cuenta con los servicios de medicina general, especialidades médico-quirúrgicas (Cirugía, Pediatría, 
+				Ginecología & Obstetricia, oftalmología, cirugía plástica, rayos x, etc.) y odontología.</p>
+				<br>
+				<p>En el HSF buscamos ejercer la medicina con un alto sentido humano siguiendo la <a href="{{base_url}}medicos">Declaración de Ginebra</a></p>
+			</div>
+		</div>
+		<div class="row UDPadding">
+			<div class="col-sm-12 col-md-4 text-center" id="mision">
+				<h1>Misión</h1>
+				<img src="{{base_url}}assets/img/lines/line_medicos.png" class="img-responsive img-center">
+				<br>
+				<p>Proporcionar a los pacientes atención médica privada de alta calidad, personalizada y amable a través de la integración de todo el personal; basados en ética, respeto y profesionalismo.</p>
+			</div>
+			<div class="col-sm-12 col-md-4 text-center" id="vision">
+				<h1>Visión</h1>
+				<img src="{{base_url}}assets/img/lines/line_medicos.png" class="img-responsive img-center">
+				<br>
+				<p>Ser la institución médica líder de la zona a través del esfuerzo constante y permanente para conseguir una mejora continua y excelencia en el ámbito asistencial.</p>
+			</div>
+			<div class="col-sm-12 col-md-4 text-center" id="valores">
+				<h1>Valores</h1>
+				<img src="{{base_url}}assets/img/lines/line_medicos.png" class="img-responsive img-center">
+				<h4 data-toggle="tooltip" data-placement="bottom" title="Con el paciente">Compromiso</h4>
+				<h4 data-toggle="tooltip" data-placement="bottom" title="En todos los procesos institucionales">Ética</h4>
+				<h4 data-toggle="tooltip" data-placement="bottom" title="En la atención hacia los pacientes, tanto en los servicios médicos como administrativos" >Calidad</h4>
+				<h4 data-toggle="tooltip" data-placement="bottom" title="En los servicios que presta la institución">Profesionalismo</h4>
+				<h4 data-toggle="tooltip" data-placement="bottom" title="A la dignidad de la persona">Respeto</h4>
+			</div>
+		</div>
+
+
+{% endblock content %}

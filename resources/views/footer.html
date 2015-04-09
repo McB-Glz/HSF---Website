@@ -1,0 +1,87 @@
+<footer>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-md-6" id="left">
+				<div class="row" id="logoFooter">
+					<div class="col-xs-12">
+						<a href="{{base_url}}"><img src="{{base_url}}assets/img/logos/logo_footer.jpg" class="img-responsive img-center UDPadding"></a>
+					</div>
+				</div>
+				<div class="row text-center hidden-xs" id="iconsFooter">
+					<div class="col-xs-12  col-sm-4">
+						<a href="{{base_url}}institucion"><img src="{{base_url}}assets/img/btn/btn_inst.png" class="iconFooter img-responsive img-center img-inline LRPadding"></a>
+					</div>
+					<div class="col-xs-12  col-sm-4">
+						<a href="{{base_url}}medicos"><img src="{{base_url}}assets/img/btn/btn_med.png" class="iconFooter img-responsive img-center img-inline LRPadding"></a>
+					</div>
+					<div class="col-xs-12  col-sm-4">
+						<a href="{{base_url}}pacientes"><img src="{{base_url}}assets/img/btn/btn_pac.png" class="iconFooter img-responsive img-center img-inline LRPadding"></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6" id="right">
+				<p class="text-center">Su opinión es muy importante para el Hospital San Felipe. </p>
+				<form method="POST" action="{{ urlFor('form') }}" id="contactForm">
+					<div class="row">
+						<div class="col-xs-10 col-xs-offset-1">
+							<div class="form-group">
+								<label class="text-sm">NOMBRE</label>
+								<input type="text" class="form-control" name="name" id="name" >
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-10 col-xs-offset-1">
+							<div class="form-group">
+								<label class="text-sm">E-MAIL</label>
+								<input type="email" class="form-control" name="email" id="email">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-10 col-xs-offset-1">
+							<div class="form-group">
+								<label class="text-sm">COMENTARIOS</label>
+								<textarea type="text" class="form-control" rows="2" name="message" id="message"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-10 col-xs-offset-1 text-left">
+							<button type="submit" class="btn btn-default text-sm">ENVIAR</button>
+						</div>
+					</div>
+				</form>
+				<div class="row" id="formSuccess">
+					<h1 class="text-center text-lg">Su mensaje ha sido enviado, muchas gracias!</h1>
+				</div>
+
+				<div class="row" id="formFail">
+					<h1 class="text-center text-lg">Error al enviar mensaje</h1>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="bottom">
+			<div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1" id="telFooter">
+				<p class="text-center"><a href="tel:53415575">53.41.55.75</a></p>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1" id="mailFooter">
+				<p class="text-md"><a href="mailto:medicapoptla@gmail.com">medicapoptla@gmail.com</a>
+				<br/>
+				<a href="mailto:pacientehsf@gmail.com">pacientehsf@gmail.com</a>
+				<br/><a href="mailto:medicoshsf@gmail.com">medicoshsf@gmail.com</a>
+				</p>	
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1" id="mapFooter">
+				<p class="text-center text-lg">Horarios &nbsp; 10:00  - 22:00
+				<br>
+				<a href="#" target="_blank">Ver Mapa</a></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 text-right">
+				<a href="#"><img src="{{base_url}}assets/img/logos/logoDS.png" class="img-responsive logoDS"></a>
+			</div>
+		</div>
+	</div>
+</footer>

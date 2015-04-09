@@ -1,0 +1,24 @@
+{
+    "name": "dinkbit/localized-slimboot",
+    "description": "Small boilerplate for PHP website with assets compilers with localization support",
+    "keywords": [
+        "slim",
+        "twig",
+        "elixir",
+        "localization",
+        "l10n"
+    ],
+    "require": {
+        "slim/slim": "2.*",
+        "slim/views": "0.1.*",
+        "twig/twig": "~1.0",
+        "phpmailer/phpmailer": "5.2.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Slimboot\\" : "Slimboot"
+        },
+        "files": [
+        ]
+    }
+}

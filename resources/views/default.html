@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+{% block head %}
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Hospital San Felipe - {% block title %}{% endblock title %}</title>
+
+  <meta property="og:locale" content="es_LA"/>
+  <meta property="og:title" content="Hospital San Felipe"/>
+  <meta property="og:description" content="El Hospital San Felipe fue fundado en 1965 por el Dr. José Kahuam González y desde entonces las generaciones de médicos de la familia Kahuam han conservado la dedicación y respeto hacia los pacientes que caracterizaban al Dr. Kahuam."/>
+  <meta property="og:url" content="{{base_url}}"/>
+  <meta property="og:site_name" content="Hospital San Felipe"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="{{base_url}}assets/img/favicon/favicon512x512.png"/>
+
+  <meta name="title" content="Hospital San Felipe">
+  <meta name="author" content="Design Squad ® | Est. 2014">
+
+  <meta name="description" content="El Hospital San Felipe fue fundado en 1965 por el Dr. José Kahuam González y desde entonces las generaciones de médicos de la familia Kahuam han conservado la dedicación y respeto hacia los pacientes que caracterizaban al Dr. Kahuam.">
+  
+  <meta name="keywords" content="Hospital, Clínica, Sanatorio, Consultorio, Terapia, Medicina, Medicina Preventiva, Vacunación, Salud, Atención a la salud, Servicios médicos, Ginecología y Obstetricia, Embarazo, Parto, Cesárea, DIU, Control prenatal, Planificación familiar, Anticoncepción, Cirugía General, Apendicitis, Colecistitis, Laparoscopia, Vesícula Biliar, Apéndice, Medicina General, Diabetes, Hipertensión, Dislipidemias, Síndrome metabólico, Neumonía, Faringitis, Gripe, Tos, Pediatría ,Control del niño sano, Alergias, Fiebre, Diarrea, Vómito">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" href="{{base_url}}assets/img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="{{base_url}}assets/img/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="{{base_url}}assets/img/favicon/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="{{base_url}}assets/img/favicon/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="{{base_url}}assets/img/favicon/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="{{base_url}}assets/img/favicon/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="{{base_url}}assets/img/favicon/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="{{base_url}}assets/img/favicon/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="{{base_url}}assets/img/favicon/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="{{base_url}}assets/img/favicon/apple-touch-icon-152x152.png" />
+   <link rel="apple-touch-icon" sizes="180x180" href="{{base_url}}assets/img/favicon/apple-touch-icon-180x180.png" />
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <link rel="stylesheet" type="text/css" href="{{base_url}}assets/css/main.min.css">
+  {% block styles %}
+
+  {% endblock styles %}
+
+{% endblock head %}
+</head>
+
+<body id="{% block sectionId %}{% endblock sectionId %}">
+ 
+  <!-- Instert google analytics snippet here -->
+
+  {% block header %}
+    {% include 'header.html' %}
+  {% endblock header %}
+
+  {% block mainMenu %}
+    {% include 'main_menu.html' %}
+  {% endblock mainMenu %}
+
+	<div class="wrapper container-fluid">
+    <div class="row" id="blah">
+      <div class="col-xs-12">
+    {% block content %}
+
+    {% endblock content %}
+      </div>
+    </div>
+	</div>
+  {% block footer %}
+    {% include 'footer.html' %}
+  {% endblock footer %}
+  <script src="{{base_url}}assets/js/jquery.min.js"></script>
+  <script src="{{base_url}}assets/js/app.min.js"></script>
+  <script>
+
+  // $( function() {
+  //   $.vegas( 'slideshow', {
+  //     delay: 8000,
+  //     backgrounds: [
+  //       { src: 'assets/img/slider/background1.jpg', fade: 4000 },
+  //       { src: 'assets/img/slider/background2.jpg', fade: 4000 }
+  //     ]
+  //   } )( 'overlay' );
+  // } );
+  // </script>
+{% block js %}
+
+{% endblock js %}
+</body>
+</html>

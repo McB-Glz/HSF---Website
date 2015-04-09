@@ -1,0 +1,50 @@
+#institucion{
+	.line{
+		background: url(../img/lines/line_institucion.png) bottom center no-repeat;
+		@media (max-width: @screen-sm-max) { 
+			background: none;
+		}
+	}
+}
+
+#mision{
+	height: 406px;
+	background: url(../img/splash/mision.png) center no-repeat;
+	padding: 5% 5% 5% 9%;
+
+	@media (max-width: @screen-sm-max) { 
+		background: @darkBlue;
+		height: 100%;
+		padding: 5%;
+	}
+}
+
+#vision{
+	height: 406px;
+	background: url(../img/splash/vision.png) center no-repeat;
+	padding: 5%;
+
+	@media (max-width: @screen-sm-max) { 
+		background: @midBlue;
+		height: 100%;
+		padding: 5%;
+	}
+}
+
+#valores{
+	height: 406px;
+	background: url(../img/splash/valores.png) no-repeat;
+	background-position: center top;
+	padding: 5% 9% 5% 5%;
+
+	h4{
+		cursor: pointer;
+		margin-top: 15px;
+	}
+
+	@media (max-width: @screen-sm-max) { 
+		background: @lightBlue;
+		height: 100%;
+		padding: 5%;
+	}
+}
