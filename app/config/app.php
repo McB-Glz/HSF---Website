@@ -1,6 +1,6 @@
 <?php
 
-return [
-    'subpath' => '',
-	//'subpath' => 'hsf/public/index.php/',
-];
+return array(
+    //'subpath' => '',
+	'subpath' => 'hsf/public/index.php/',
+);

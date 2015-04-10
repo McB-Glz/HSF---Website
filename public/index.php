@@ -1,5 +1,9 @@
 <?php
 
+
+error_reporting(-1);
+ini_set('dispay_errors', 1);
+
 /**
  * @var string root of the app.
  */

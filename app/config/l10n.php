@@ -8,9 +8,9 @@
 // The localization hook contains a call to this file.
 //
 
-return [
-    'locales' => [
+return array(
+    'locales' => array(
         'es',
         'en',
-    ],
-];
+    ),
+);

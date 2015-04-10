@@ -2,8 +2,8 @@
 
 // Data
 $data                 = array();
-$data['base_url']     = 'http://'.$_SERVER['HTTP_HOST']."/";
-//$data['base_url']     = 'http://'.$_SERVER['HTTP_HOST']."/hsf/public/";
+//$data['base_url']     = 'http://'.$_SERVER['HTTP_HOST']."/";
+$data['base_url']     = 'http://'.$_SERVER['HTTP_HOST']."/hsf/public/";
 $data['current_url']  = $data['base_url'].trim($app->request->getResourceUri(), '/');
 
 $app->get('/', function() use ($app, $data) {

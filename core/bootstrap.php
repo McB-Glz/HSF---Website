@@ -15,7 +15,7 @@ function loadConfigs($dir)
 {
     // make $app variable visible for calling its methods
     global $app;
-    $configs = [];
+    $configs = array();
     foreach (glob("$dir/*.php") as $filename) {
         $configKey = substr(basename($filename), 0, -4);
         $configs[$configKey] = require $filename;
@@ -37,12 +37,12 @@ function loadMiddlewares($dir)
 ////////////////////////////////////////////////////////////////////////// generate application...
 
 // Create an application instance with some default settings. Customize it!
-$app = new \Slimboot\LocalizedSlim([
+$app = new \Slimboot\LocalizedSlim(array(
     'mode'              => 'local', // Can be set by $_ENV['SLIM_MODE'] = 'production';
     'templates.path'    => $rootPath.'/resources/views',
     'cookies.encrypt'   => false,
     'cookies.lifetime'  => '20 minutes',
-]);
+));
 
 ////////////////////////////////////////////////////////////////////////// ...and start bootstraping
 
@@ -64,13 +64,13 @@ loadMiddlewares($appPath.'/middlewares');
 // Configure Views
 $app->view(new \Slim\Views\Twig());
 
-$app->view->parserOptions = [
+$app->view->parserOptions = array(
     'charset'          => 'utf-8',
     'cache'            => $rootPath.'/storage/templates',
     'auto_reload'      => true,
     'strict_variables' => false,
     'autoescape'       => true,
-];
+);
 
 // Add custom twig extension prepared to work with locales
 $app->view->parserExtensions = [new \Slimboot\TwigExtension()];

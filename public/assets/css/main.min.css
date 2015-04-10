@@ -17952,4 +17952,32 @@ footer .logoDS {
     padding: 5%;
   }
 }
+.bgHome {
+  height: 510px;
+  background: url(../img/splash/home.png) center no-repeat;
+  margin: 10% 0 !important;
+}
+.bgHome .arriba {
+  padding: 6% 0 0 0;
+}
+@media (max-width: 991px) {
+  .bgHome .arriba {
+    padding: 0;
+  }
+}
+.bgHome .abajo {
+  padding: 18% 0 0 0;
+}
+@media (max-width: 991px) {
+  .bgHome .abajo {
+    padding: 0;
+  }
+}
+@media (max-width: 991px) {
+  .bgHome {
+    background: #265583;
+    height: 100%;
+    padding: 5%;
+  }
+}
 /*# sourceMappingURL=main.min.css.map */

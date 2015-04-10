@@ -130,7 +130,7 @@ $(window).ready(function() {
         var bv = $form.data('formValidation');
         
         // Use Ajax to submit form data
-        $.post($form.attr('action'), $form.serialize(), function(result) {                        
+        $.post($form.attr('action') + '?ajax=1', $form.serialize(), function(result) {                        
 
             if(result.status == 'ok'){             
 

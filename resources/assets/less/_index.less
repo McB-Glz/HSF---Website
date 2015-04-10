@@ -3,3 +3,31 @@
 		//height: 300px;
 	}
 }
+
+.bgHome{
+	height: 510px;
+	background: url(../img/splash/home.png) center no-repeat;
+	margin: 10% 0 !important;
+
+	.arriba{
+		padding: 6% 0 0 0;
+
+		@media (max-width: @screen-sm-max) { 
+			padding: 0;
+		}
+	}
+
+	.abajo{
+		padding: 18% 0 0 0;
+
+		@media (max-width: @screen-sm-max) { 
+			padding: 0;
+		}
+	}
+
+	@media (max-width: @screen-sm-max) { 
+		background: @darkBlue;
+		height: 100%;
+		padding: 5%;
+	}
+}
