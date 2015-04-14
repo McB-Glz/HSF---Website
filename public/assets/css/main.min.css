@@ -17569,6 +17569,9 @@ a :hover {
 .media:first-child {
   margin-top: 15px;
 }
+.vegas-loading {
+  display: none;
+}
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
@@ -17720,6 +17723,9 @@ footer a:hover {
   color: #60a1d8;
   text-decoration: none;
 }
+footer a:visited {
+  color: white;
+}
 footer #left {
   background: url(../img/lines/lineFooterV.png) center right no-repeat;
   background-size: auto 90%;
@@ -17782,8 +17788,8 @@ footer #telFooter {
   background-size: auto 80%;
   height: 90%;
   margin-top: 1%;
-  font-size: 40px;
-  padding: 2.5% 0 0 0;
+  font-size: 18px;
+  padding: 4% 0 0 0;
 }
 @media (max-width: 767px) {
   footer #telFooter {
@@ -17797,7 +17803,7 @@ footer #mailFooter {
   background-size: auto 80%;
   height: 90%;
   margin-top: 1%;
-  padding: 2.5% 0 0 5%;
+  padding: 4% 0 0 5%;
   text-align: left;
   line-height: 26px;
 }
@@ -17837,12 +17843,18 @@ footer .logoDS {
   height: 406px;
   background: url(../img/splash/mision.png) center no-repeat;
   padding: 5% 5% 5% 9%;
+  /* Large devices (large desktops, 1200px and up) */
 }
 @media (max-width: 991px) {
   #mision {
     background: #265583;
     height: 100%;
     padding: 5%;
+  }
+}
+@media (min-width: 1200px) {
+  #mision {
+    padding: 5% 6% 5% 9%;
   }
 }
 #vision {
@@ -17855,6 +17867,11 @@ footer .logoDS {
     background: #3e86c7;
     height: 100%;
     padding: 5%;
+  }
+}
+@media (min-width: 1200px) {
+  #vision {
+    padding: 5% 8%;
   }
 }
 #valores {
@@ -17872,6 +17889,11 @@ footer .logoDS {
     background: #60a1d8;
     height: 100%;
     padding: 5%;
+  }
+}
+@media (min-width: 1200px) {
+  #valores {
+    padding: 5% 8% 5% 5%;
   }
 }
 #medicos .line {
@@ -17898,10 +17920,15 @@ footer .logoDS {
     padding: 5%;
   }
 }
+@media (min-width: 1200px) {
+  .PC {
+    padding: 4.3% 21% 0 35%;
+  }
+}
 .RC {
   height: 318px;
   background: url(../img/splash/rentaConsultorios.png) center no-repeat;
-  padding: 4.3% 31% 0 16%;
+  padding: 5.5% 31% 0 16%;
 }
 @media (max-width: 991px) {
   .RC {
@@ -17910,10 +17937,15 @@ footer .logoDS {
     padding: 5%;
   }
 }
+@media (min-width: 1200px) {
+  .RC {
+    padding: 5.5% 32% 0 23%;
+  }
+}
 .AM {
   height: 318px;
   background: url(../img/splash/atencionMedicos.png) center no-repeat;
-  padding: 4.3% 15% 0 31%;
+  padding: 5% 15% 0 31%;
 }
 @media (max-width: 991px) {
   .AM {
@@ -17921,6 +17953,22 @@ footer .logoDS {
     height: 100%;
     padding: 5%;
   }
+}
+@media (min-width: 1200px) {
+  .AM {
+    padding: 3.3% 21% 0 35%;
+  }
+}
+.media-heading {
+  padding-top: 5%;
+}
+.dralia-reviews {
+  display: inline;
+  margin: 0 auto;
+  width: 100%;
+}
+.dralia-reviews .dralia-opinions {
+  max-width: none;
 }
 .bgMidBlue {
   background: #3e86c7;
@@ -17943,7 +17991,7 @@ footer .logoDS {
 .AP {
   height: 318px;
   background: url(../img/splash/atencionPacientes.png) center no-repeat;
-  padding: 3% 16% 0 33%;
+  padding: 5% 15% 0 31%;
 }
 @media (max-width: 991px) {
   .AP {
@@ -17952,13 +18000,19 @@ footer .logoDS {
     padding: 5%;
   }
 }
+@media (min-width: 1200px) {
+  .AP {
+    padding: 3.3% 21% 0 35%;
+  }
+}
 .bgHome {
   height: 510px;
   background: url(../img/splash/home.png) center no-repeat;
   margin: 10% 0 !important;
 }
 .bgHome .arriba {
-  padding: 6% 0 0 0;
+  padding: 80px 142px 0 145px;
+  max-width: 1200px;
 }
 @media (max-width: 991px) {
   .bgHome .arriba {
@@ -17966,7 +18020,8 @@ footer .logoDS {
   }
 }
 .bgHome .abajo {
-  padding: 18% 0 0 0;
+  padding: 205px 150px 0 150px;
+  max-width: 1200px;
 }
 @media (max-width: 991px) {
   .bgHome .abajo {
